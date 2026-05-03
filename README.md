@@ -12,7 +12,7 @@
 ## 二、安装依赖
 
 ```bash
-cd C:\Users\l2386\Desktop\web\weblog_anomaly_detector
+cd weblog_anomaly_detector
 pip install -r requirements.txt
 ```
 
